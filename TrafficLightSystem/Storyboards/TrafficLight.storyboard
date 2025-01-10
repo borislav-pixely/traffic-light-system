@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Traffic Light View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="TrafficLightViewController" customModule="TrafficLightSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bom-Ar-kJ9">
+                                <rect key="frame" x="16" y="79" width="76.333333333333329" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bYM-Po-xzE">
+                                <rect key="frame" x="131.66666666666666" y="158.33333333333337" width="129.99999999999997" height="396"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjA-R4-HEN" userLabel="Spacer View">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="2"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="14l-7R-fwl"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8w6-IS-MeD">
+                                        <rect key="frame" x="5" y="10" width="120" height="120"/>
+                                        <color key="backgroundColor" name="RedLight"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="P3y-0c-sGx"/>
+                                            <constraint firstAttribute="height" constant="120" id="jXg-qc-fsL"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p9i-nk-Aww">
+                                        <rect key="frame" x="5" y="137.99999999999997" width="120" height="120.00000000000003"/>
+                                        <color key="backgroundColor" name="DisabledOrangeLight"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="CmG-pB-Dxa"/>
+                                            <constraint firstAttribute="height" constant="120" id="iKG-CZ-ziR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Gu-xt-o8H">
+                                        <rect key="frame" x="5" y="266" width="120" height="120"/>
+                                        <color key="backgroundColor" name="DisabledGreenLight"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="0dW-Aw-Ids"/>
+                                            <constraint firstAttribute="width" constant="120" id="K6T-hF-gkZ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmf-32-M0W" userLabel="Spacer View">
+                                        <rect key="frame" x="0.0" y="394" width="130" height="2"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="Egz-b6-SSE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="T0j-P5-LUc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bYM-Po-xzE" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Cku-WK-4jw"/>
+                            <constraint firstItem="bom-Ar-kJ9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="baL-nq-8T4"/>
+                            <constraint firstItem="bom-Ar-kJ9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="jdW-ss-vq7"/>
+                            <constraint firstItem="bYM-Po-xzE" firstAttribute="top" secondItem="bom-Ar-kJ9" secondAttribute="bottom" constant="60" id="q9a-Jy-zgR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="carModel" destination="bom-Ar-kJ9" id="qat-vM-iAH"/>
+                        <outlet property="greenLightView" destination="1Gu-xt-o8H" id="nZW-kx-CwI"/>
+                        <outlet property="orangeLightView" destination="p9i-nk-Aww" id="rUq-iU-qTM"/>
+                        <outlet property="redLightView" destination="8w6-IS-MeD" id="vUQ-ZN-pz4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="DisabledGreenLight">
+            <color red="0.031372549019607843" green="0.8784313725490196" blue="0.23921568627450981" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DisabledOrangeLight">
+            <color red="1" green="0.6705882352941176" blue="0.11764705882352941" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RedLight">
+            <color red="0.90196078431372551" green="0.16470588235294117" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

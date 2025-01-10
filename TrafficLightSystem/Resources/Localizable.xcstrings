@@ -1,0 +1,33 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Car Model" : {
+
+    },
+    "Car Model Input" : {
+
+    },
+    "Car model must be at least 3 characters long." : {
+
+    },
+    "Car Model: %@" : {
+
+    },
+    "Invalid Car Model" : {
+
+    },
+    "OK" : {
+
+    },
+    "Start Driving" : {
+
+    },
+    "Traffic Light" : {
+
+    },
+    "Write your car's model here" : {
+
+    }
+  },
+  "version" : "1.0"
+}
